@@ -1,0 +1,24 @@
+{
+  "name": "react-node-postgres-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "prebuild": "npm install && cd client && npm install && cd ../server && npm install && cd ..",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:server && npm run build:client",
+    "prestart": "npm run build",
+    "start": "ENV_FILE=.env.production NODE_ENV=production node server/dist/server.js",
+    "prestart:test": "npm run build",
+    "start:test": "ENV_FILE=.env.test NODE_ENV=production node server/dist/server.js",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.1.3"
+  }
+}

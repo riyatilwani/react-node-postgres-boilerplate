@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #fff;
+  line-height: 1.75;
+  font-weight: normal;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logout {
+  color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 0px 35px -3px rgba(0, 69, 66, 0.16);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  width: 160px;
+}

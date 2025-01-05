@@ -1,0 +1,23 @@
+.bg-custom-green {
+  background-color: #65b32d;
+}
+
+.hover-bg-custom-green:hover {
+  background-color: #579c2a; /* Slightly darker shade for hover */
+}
+
+.bg-custom-blue {
+  background-color: #0192d4;
+}
+
+.hover-bg-custom-blue:hover {
+  background-color: #017aac; /* Slightly darker shade for hover */
+}
+
+.bg-custom-red {
+  background-color: #D32F2F;
+}
+
+.hover-bg-custom-red:hover {
+  background-color: #B71C1C; /* Slightly darker shade for hover */
+}
